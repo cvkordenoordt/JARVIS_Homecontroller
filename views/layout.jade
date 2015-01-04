@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.css')
+    link(rel='stylesheet', href='/stylesheets/ace-fonts.css')
+    link#main-ace-style.ace-main-stylesheet(rel='stylesheet', href='/stylesheets/ace.css')
+  body
+    div.navbar.navbar-inverse.navbar-fixed-top
+      div.container
+        div.navbar-header.pull-left
+          a.navbar-brand(href="#")
+            i.glyphicon.glyphicon-leaf
+            |  JARVIS
+    div.container.main-container
+      block content
